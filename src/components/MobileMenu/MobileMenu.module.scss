@@ -1,0 +1,101 @@
+.mobileMenu {
+    &__wrapper {
+        display: flex;
+        left: 0;
+        top: 0;
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobileMenu {
+        display: flex;
+        justify-content: center;
+        &__wrapper {
+            height: 100vh;
+            font-size: 36px;
+            color: var(--main-text-color);
+            background-color: var(--main-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            width: 100%;
+            padding: 133px 30px 30px;
+            z-index: 10000;
+            & ul {
+                list-style: none;
+                & li {
+                    padding: 5px;
+                }
+            }
+        }
+        nav {
+            max-width: 600px;
+            width: 100%;
+        }
+        &__contact{
+            font-size: 24px;
+        }
+        &__close{
+            position: absolute;
+            top: 70px;
+            right: 100px;
+            & img {
+                width: 60px !important;
+                height: 55px !important;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 550px) {
+    .mobileMenu {
+        &__wrapper {
+            font-size: 24px;
+            color: var(--main-text-color);
+            background-color: var(--main-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 80px 30px 30px;
+            & ul {
+                list-style: none;
+                & li {
+                    padding: 10px;
+                }
+            }
+        }
+        &__contact{
+            text-align: left;
+            font-size: 17px;
+        }
+        &__close{
+            top: 45px;
+            right: 60px;
+            & img {
+                width: 35px !important;
+                height: 32px !important;
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 375px) {
+    .mobileMenu {
+        &__close{
+            top: 35px;
+            right: 49px;
+            & img {
+                width: 27px !important;
+                height: 29px !important;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,299 @@
+.specialConditions {
+    width: 100%;
+    max-width: 1365px;
+    &__heading {
+        color: var(--third-text-color);
+        font-size: 5vw;
+        font-weight: 700;
+        line-height: 1;
+    }
+    &__container {
+        position: relative;
+        width: 100%;
+        height: 40vw;
+    }
+    &__img {
+        display: block;
+        position: absolute;
+        width: 20%;
+        height: auto;
+        &__topRight {
+            top: 0;
+            right: 0;
+        }
+        &__bottomLeft {
+            bottom: 0;
+            left: 0;
+        }
+        &__tab {
+            display: none;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    &__svg1 {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    &__svg2 {
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+    &__svg3 {
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+    &__svg4 {
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+    &__info {
+        width: 20vw;
+        position: absolute;
+        text-align: center;
+        font-size: 2vw;
+        line-height: 1.2;
+        font-weight: 500;
+        &__first {
+            top: 30%;
+            left: 0%;
+        }
+        &__second {
+            top: 2%;
+            left: 44%;
+        }
+        &__third {
+            top: 60%;
+            right: 30%;
+        }
+        &__fours {
+            bottom: 0%;
+            right: 4%;
+        }
+    }
+    &__icon{
+        width: 10vw;
+        height: 10vw;
+        border-radius: 50%;
+        position: absolute;
+        &__first {
+            top: 2%;
+            left: 0;
+        }
+        &__second {
+            top: 18%;
+            left: 50%;
+        }
+        &__third {
+            bottom: 0%;
+            left: 30%;
+        }
+        &__fours {
+            bottom: 18%;
+            right: 0%;
+        }
+    }
+}
+
+@media (min-width: 1365px) {
+    .specialConditions {
+        width: 1365px;
+        margin: 0 auto;
+        &__heading {
+            font-size: 96px;
+        }
+        &__container {
+            height: 600px;
+        }
+        &__img {
+            width: 400px;
+            height: auto;
+            &__topRight {
+                right: 20px;
+                top: -50px;
+            }
+        }
+        &__svg2 {
+            display: block;
+        }
+        &__svg1 {
+            display: none;
+        }
+        &__info {
+            width: 320px;
+            font-size: 30px;
+            &__first {
+                left: 23%;
+            }
+            &__second {
+                top: 6%;
+                left: 25%;
+            }
+            &__third {
+                top: 48%;
+                right: 25%;
+            }
+            &__fours {
+                bottom: 0%;
+                right: 10%;
+            }
+        }
+        &__icon{
+            width: 160px;
+            height: 160px;
+            &__first {
+                top: 5%;
+                left: 0;
+            }
+            &__second {
+                top: 18%;
+                left: 50%;
+            }
+            &__third {
+                bottom: 0%;
+                left: 35%;
+            }
+            &__fours {
+                bottom: 25%;
+                right: 4%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px ){
+    .specialConditions {
+        &__img {
+            &__topRight {
+                display: none;
+            }
+            &__bottomLeft {
+                display: none;
+            }
+            &__tab {
+                display: block;
+                width: 30%;
+            }
+        }
+        &__svg1 {
+            display: none;
+        }
+        &__svg2 {
+            display: none;
+        }
+        &__svg3 {
+            display: block;
+        }
+        &__info {
+            width: 21vw;
+            font-weight: 400;
+            font-size: 2.3vw;
+            &__first {
+                top: 22%;
+                left: 30%;
+            }
+            &__second {
+                top: -2%;
+                left: 74%;
+            }
+            &__third {
+                top: 73%;
+                right: 48%;
+            }
+            &__fours {
+                bottom: 33%;
+                right: 3%;
+            }
+        }
+        &__icon{
+            width: 14vw;
+            height: 14vw;
+            &__first {
+                top: -6%;
+                left: 30%;
+            }
+            &__second {
+                top: 16%;
+                left: 84%;
+            }
+            &__third {
+                bottom: 27%;
+                left: 30%;
+            }
+            &__fours {
+                bottom: 0%;
+                right: 2%;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px ){
+    .specialConditions {
+        &__heading{
+            font-size: 33px;
+        }
+        &__container{
+            height: 100vw;
+        }
+        &__img {
+            &__tab {
+                display: none;
+            }
+        }
+        &__svg3 {
+            display: none;
+        }
+        &__svg4 {
+            display: block;
+            height: 100%;
+        }
+        &__info {
+            width: 42vw;
+            font-size: 4vw;
+            &__first {
+                top: 30%;
+                left: 6%;
+            }
+            &__second {
+                top: 9%;
+                left: initial;
+                right: 0;
+            }
+            &__third {
+                top: initial;
+                right: 0;
+                bottom: 28%;
+            }
+            &__fours {
+                bottom: 6%;
+                right: initial;
+                left: 10%;
+            }
+        }
+        &__icon{
+            width: 22vw;
+            height: 22vw;
+            &__first {
+                top: 3%;
+                left: 0;
+            }
+            &__second {
+                top: 24%;
+                left: initial;
+                right: 0;
+            }
+            &__third {
+                bottom: 24%;
+                left: 0;
+            }
+            &__fours {
+                right: 0;
+            }
+        }
+    }
+}

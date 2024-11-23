@@ -1,0 +1,35 @@
+.catalogy {
+    max-width: 1300px;
+    width: 100%;
+    padding: 100px 50px;
+    &__heading{
+        color: var(--five-text-color);
+        font-size: 96px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 0 10px;
+        line-height: 0.8;
+    }
+}
+
+@media (max-width: 1025px){
+    .catalogy{
+        padding: 50px 33.5px 80px ;
+      &__heading{
+        font-size: 86px;
+        font-weight: bold;
+        padding: 0 5px;
+      }
+    }
+  }
+
+  @media (max-width: 600px){
+    .catalogy{
+      padding: 30px 10px 50px;
+
+    &__heading{
+      font-size: 40px;
+      padding: 0 5px;
+    }
+  }
+  }

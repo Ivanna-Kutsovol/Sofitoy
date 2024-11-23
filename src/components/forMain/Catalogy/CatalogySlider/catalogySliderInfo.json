@@ -1,0 +1,30 @@
+[
+	{
+		"name": "3D Magnet Building Blocks Construction Kit 73pcs",
+		"rating": 4,
+		"imgSrc": "constructors.png",
+		"descr": "Plastic, magnet",
+		"price": "51 $",
+		"id": 15,
+		"reviews": 13
+	},
+	{
+		"name": "Water Drawing Set with Stencils and Stamps",
+		"rating": 5,
+		"imgSrc": "photoroomMat.png",
+		"descr": " Plastic, polymer",
+		"sale": "25 $",
+		"price": "30 $",
+		"id": 20,
+		"reviews": 4
+	},
+	{
+		"name": "Double-Sider Creative Canvas Bei Di Yuan",
+		"rating": 5,
+		"imgSrc": "photoroom2.png",
+		"descr": " Plastic",
+		"price": "50 $",
+		"id": 25,
+		"reviews": 3
+	}
+]

@@ -1,0 +1,239 @@
+.swith{
+  display: grid;
+  align-items: center;
+  width: 105%;
+  border-radius: 60px;
+  background-color: var(--color-button);
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.1s, transform 0.1s;
+  
+  &--step0{
+    background-color: var(--color-button);
+  }
+  &--step1{
+    background: linear-gradient(to right, #7B8FD1 0%, var(--color-button)35%, #FCA5D0 65%);
+  }
+  &--step2{
+    background: linear-gradient(to right, #6273FF 0%, #6A7CF0 11%,
+      #8988E2 22%, #9D91D9 33%, #B098D1 44%, #C49CD1 56%, #CC9DD1 67%,
+      #E3A1D0 78%, #FCA5D0 89%, var(--color-button) 100%);
+  }
+  &--step3{
+    background: linear-gradient(to right,  #6273FF 0%, #6677F8 14%, #6A7CF0 29%,
+      #8188E1 43%, #9994D1 57%, #C29BD1 71%, var(--color-button) 100% );
+  }
+  &--step4{
+    background: linear-gradient( to right, #6273FF 0%, #6475FB 19%, #6677F8 28%,
+    #6A7CF0 39%,#8188E1 50%, #9994D1 57%, #C29BD1 71%, var(--color-button) 100% ) ;
+  }
+  &--step5{
+    background: linear-gradient(to right, #4B5FFF 0%, #5164FC 17%, #5568FB 33%,
+    #6A7CF0 50%, #7083E5 67%, #7A8ED4 83%, #7B8FD1 100% );
+  }
+
+  &__button{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    cursor: pointer;
+    
+    
+    &:before{
+      width: 98px;
+      content: '';
+      height: 98px;
+      background-color: var(--main-text-color);
+      margin-left: 23px;
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    &:after{
+      width: 38px; 
+      height: 38px;
+      border-radius: 50%;
+      background-color: var(--pink-color);
+      margin: 0 0 0 53px;
+      content: '';
+      z-index: 1000;
+      position: absolute;
+    }
+
+    &--step1{
+      &:before {
+          background: linear-gradient(
+          to right,
+          #fef7b3 0px, 
+          #fef7b3 20px, 
+          var(--main-text-color) 20px, 
+          var(--main-text-color) 100%
+        );
+      }
+    };
+    &--step2{
+      &:before {
+          background: linear-gradient(
+          to right,
+          #fef7b3 0px, 
+          #fef7b3 20px, 
+          #fef499, 40px,
+          var(--main-text-color) 20px, 
+          var(--main-text-color) 100%
+        );
+      }
+    };
+    &--step3{
+      &:before {
+          background: linear-gradient(
+          to right,
+          #fef7b3 0px, 
+          #fef7b3 20px, 
+          #fef499 40px,
+          #fdee66 60px,
+          var(--main-text-color) 20px, 
+          var(--main-text-color) 100%
+        );
+      }
+    };
+    &--step4{
+      &:before {
+          background: linear-gradient(
+          to right,
+          #fef7b3 0px, 
+          #fef7b3 20px, 
+          #fef499 40px,
+          #fdee66 60px,
+          #fde933 80px,
+          var(--main-text-color) 20px, 
+          var(--main-text-color) 100%
+        );
+      }
+    };
+    &--step5{
+      &:before {
+          background: linear-gradient(
+          to right,
+          #fef7b3 0px, 
+          #fef7b3 20px, 
+          #fef499 40px,
+          #fdee66 60px,
+          #fde933 80px,
+          #fce300 100px
+        );
+      }
+    }
+  }
+
+
+  &__text{
+    text-align: center;
+    color: var(--main-text-color);
+    font-size: 48px;
+    font-weight: 1000;
+    padding: 6%;
+
+    &--step0{
+      color: var(--main-text-color);
+    }
+    &--step2{
+      z-index: -1;
+    }
+    &--step3{
+      z-index: -1;
+    }
+    &--step4{
+      z-index: -1;
+    }
+    &--step5{
+      z-index: -1;
+    }
+  }
+}
+
+.cloud {
+  z-index: 10000;
+  transition: transform 0.3s ease-in-out;
+  box-sizing: content-box;
+  background-repeat:  no-repeat;
+}
+
+.rays {
+  background-color: #ecba3f;
+  z-index: 9;
+  transition: transform 0.3s ease-in-out;
+}
+
+.checkbox{
+  position: absolute;
+  left: 45px;
+  align-items: start;
+  z-index: 10000000;
+}
+
+.disabled{
+  opacity: 0.5;
+}
+
+.checkbox :checked + .swith__button::before{
+  transform: translateX(100px);
+}
+
+@media(max-width: 1024px){
+  .swith{
+    border-radius: 60px;
+
+    &__button{
+      
+      &:before{
+        width: 70px;
+        height: 70px;
+        margin-left: 16px;
+      }
+  
+      &:after{
+        width: 26px;
+        height: 26px;
+        margin: 0px 0px 0px 38px;
+      }
+    }
+
+    &__text{
+      font-size: 32px;
+    }
+  }
+
+  .cloud,
+  .rays{
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 600px){
+  .swith{
+    border-radius: 25px;
+
+    &__button{
+      &:before{
+        width: 30px;
+        height: 30px;
+        margin-left: 7px;
+      }
+  
+      &:after{
+        width: 10px;
+        height: 10px;
+        margin: 0px 0px 0px 17px;
+      }
+    }
+
+    &__text{
+      font-size: 13px;
+    }
+  }
+  .cloud,
+  .rays{
+    transform: scale(1);
+  }
+}

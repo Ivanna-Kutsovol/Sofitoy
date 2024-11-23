@@ -1,0 +1,37 @@
+[
+	{
+		"avatar": "girlFeedback1.png",
+		"author": "Nia",
+		"date": "07.10.2024",
+		"rating": 2,
+		"comment": "The chalkboard is perfect for my kids! They spend hours drawing and learning letters. It keeps them entertained and engaged."
+	},
+	{
+		"avatar": "boyFeedback2.png",
+		"author": "Leo",
+		"date": "21.12.2023",
+		"rating": 1,
+		"comment": "I bought the magnetic building set for my son, and he absolutely loves it! The pieces are easy to connect and it's great for creativity."
+	},
+	{
+		"avatar": "girlFeedback3.png",
+		"author": "Breeze",
+		"date": "18.05.2024",
+		"rating": 5,
+		"comment": "The drawing mat is a fantastic toy! My daughter enjoys using water pens to create colorful pictures without any mess."
+	},
+	{
+		"avatar": "boyFeedback4.png",
+		"author": "Raph",
+		"date": "01.06.2024",
+		"rating": 1,
+		"comment": "This chalkboard is a must-have for any household with young children. It's sturdy and encourages endless creative play."
+	},
+	{
+		"avatar": "girlFeedback5.png",
+		"author": "Ellis",
+		"date": "30.05.2024",
+		"rating": 3,
+		"comment": "My kids love the magnetic set! It’s safe, easy, and develops spatial thinking."
+	}
+]

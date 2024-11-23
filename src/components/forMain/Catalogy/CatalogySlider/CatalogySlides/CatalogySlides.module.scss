@@ -1,0 +1,383 @@
+.catalogySlides {
+  width: 100%;
+  &__img {
+    height: 410px;
+    width: 100%;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    background-color: var(--fours-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 70px;
+    & > img {
+      height: 100%;
+      width: auto;
+    }
+  }
+  &__info {
+    height: 180px;
+    background-color: var(--main-text-color);
+    width: 100%;
+    padding: 25px 70px 25px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: var(--fours-text-color);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  &__infoBox {
+    &:first-child {
+      color: #524C4C;
+      font-weight: 400;
+      font-size: 36px;
+    }
+    &:last-child {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      font-size: 28px;
+      color: #726B6B;
+      font-weight: 400;
+    }
+  }
+  &__title {
+    font-size: 34px;
+    font-weight: 600;
+    display: block;
+    color:#524C4C;
+  }
+  &__descr {
+    color: #949494;
+  }
+  &__price {
+    font-size: 44px;
+    font-weight: 500;
+    text-align: right;
+    line-height: 1;
+  }
+  &__priceBox{
+    display: flex;
+    text-align: right;
+    flex-direction: row-reverse;
+  }
+  &__priceOld{
+    font-size: 44px;
+    font-weight: 400;
+    padding: 0 0 0 10px;
+    text-decoration: line-through;
+  }
+  &__priceSale{
+    font-size: 44px;
+    font-weight: 600;
+    color: rgb(190, 27, 27);
+  }
+  &__rating {
+    display: flex;
+    justify-content: end;
+  }
+  &__buttonBuyNow {
+    display: block;
+    width: 610px;
+    height: 90px;
+    background-color: var(--main-color);
+    border-radius: 46px;
+    border: none;
+    font-size: 60px;
+    font-weight: 500;
+    color: var(--main-text-color);
+    margin: 5px auto 0px;
+    transition: 0.2s;
+    &:hover {
+      cursor: pointer;
+      border: 2px solid var(--main-color);
+      background-color: inherit;
+      color: var(--main-color);
+    }
+  }
+  &__sticker {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    z-index: 1;
+  }
+  &__controls {
+    position: relative;
+    text-align: center;
+  }
+  &__prevButton,
+  &__nextButton {
+    width: 100px;
+    height: 100px;
+    border: none;
+    background-color: inherit;
+    position: absolute;
+    transition:
+      scale 0.1s ease,
+      opacity 0.2s ease;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.6;
+    }
+    &:active {
+      scale: 1.2;
+    }
+  }
+  &__prevButton {
+    top: -550px;
+    left: -80px;
+    &:after {
+      content: url("../../../../../../public/imgCatalogy/leftArrowSlider.png");
+    }
+  }
+  &__nextButton {
+    top: -550px;
+    right: -80px;
+    &::after {
+      content: url("../../../../../../public/imgCatalogy/rightArrowSlider.png");
+    }
+  }
+}
+
+.ammount { 
+  display: flex; 
+  justify-content: end; 
+  align-items: center; 
+  gap: 5px;
+
+  &__button{ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 35px; 
+    height: 35px; 
+    border-radius: 50%; 
+    border: 3px solid var(--border-color); 
+    font-size: 33px; 
+    color: var(--border-color); 
+    background-color: transparent; 
+    font-weight: 400; 
+     
+  &:hover { 
+    cursor: pointer; 
+    background-color: var(--border-color); 
+    color: var(--main-text-color); 
+  } 
+  &:active { 
+    transform: scale(1.1); 
+    background-color: var(--border-color); 
+    color: var(--main-text-color); 
+  } 
+} 
+  &__number { 
+  font-size: 40px; 
+  color: var(--number-color); 
+} 
+}
+
+@media (max-width: 1300px){
+    .catalogySlides{
+      &__buttonBuyNow {
+        margin: 10px auto 0px;
+    }
+    &__prevButton{
+      top: -550px;
+      left: -70px;
+      &:after {
+        content: url("../../../../../../public/imgCatalogy/leftArrowSliderTablet.png")
+      }
+    }
+    &__nextButton{
+      top: -550px;
+      right: -70px;
+      &:after {
+      content: url("../../../../../../public/imgCatalogy/rightArrowSliderTablet.png")
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  
+  .catalogySlides{
+    &__img{
+      height: 350px;
+    }
+    &__info{
+      height: 145px;
+      padding: 18px 38px;
+      display: grid;
+    }
+    &__infoBox {
+      &:first-child {
+        font-size: 32px;
+      }
+      &:last-child {
+        flex-direction: column;
+        align-items: flex-end;
+      }
+    }
+    &__rating {
+      width: 32px;
+      height: 30px;
+      > img {
+        height: 100%;
+        width: auto;
+      }
+    }
+    &__title {
+      font-size: 26px;
+    }  
+    &__descr {
+      font-size: 26px;
+      text-align: end;
+    }
+    &__sticker,
+    &__priceSale,
+    &__priceOld,
+    &__price {
+      font-size: 30px;
+      font-weight: 500;
+    }
+    &__priceOld{
+      font-weight: 400;
+    }
+    &__priceSale{
+      font-weight: 600;
+    }
+    &__buttonBuyNow {
+      width: 400px;
+      height: 70px;
+      font-size: 30px;
+      font-weight: 500;
+      border-radius: 25px;
+      margin: 10px auto 0px;
+    }
+    &__prevButton{
+      top: -400px;
+      left: -70px;
+      &:after {
+        content: url("../../../../../../public/imgCatalogy/leftArrowSliderTablet.png")
+      }
+    }
+    &__nextButton{
+      top: -400px;
+      right: -70px;
+      &:after {
+      content: url("../../../../../../public/imgCatalogy/rightArrowSliderTablet.png")
+      }
+    }
+    .ammount{ 
+      gap: 3px;
+      &__button { 
+        width: 25px; 
+        height: 25px; 
+        font-size: 20px; 
+        border-width: 2px; 
+        font-weight: 500; 
+      } 
+      &__number { 
+        font-size: 30px; 
+      } 
+    }
+  }
+}
+
+@media (max-width: 600px){
+  .catalogySlides{
+    &__img{
+      height: 180px;
+      padding: 15px;
+    }
+    &__info{
+      height: 78px;
+      padding: 10px 18px;
+    }
+    &__infoBox {
+      &:first-child {
+        font-size: 12px;
+      }
+      &:last-child {
+        align-items: flex-end;
+      }
+    }
+    &__rating {
+      width: 15px;
+      height: 14px;
+      > img {
+        height: 100%;
+        width: auto;
+      }
+    }
+    &__title {
+      font-size: 14px;
+    }  
+    &__descr {
+      font-size: 15px;
+    }
+    &__sticker,
+    &__priceSale,
+    &__priceOld,
+    &__price {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    &__priceOld{
+      font-weight: 400;
+    }
+    &__buttonBuyNow {
+      width: 220px;
+      height: 40px;
+      font-size: 24px;
+      font-weight: 500;
+      margin: 5px auto 0px;
+    }
+    &__prevButton{
+      top: -240px;
+      left: -60px;
+      &:after {
+        content: url("../../../../../../public/imgCatalogy/leftArrowSliderMobile.png")
+      }
+    }
+    &__nextButton{
+      top: -240px;
+      right: -60px;
+      &:after {
+      content: url("../../../../../../public/imgCatalogy/rightArrowSliderMobile.png")
+      }
+    }
+    .ammount{
+      gap: 3px;
+      &__button {
+        width: 14px;
+        height: 14px;
+        font-size: 14px;
+        border-width: 1px; 
+      }
+      &__number {
+        font-size: 18px;
+      }
+    }
+    
+  }
+}
+
+@media(hover: none){
+  .catalogySlides{
+    &__prevButton,
+    &__nextButton {
+      &:hover {
+        cursor: pointer;
+        opacity: 1;
+      }
+    }
+  }
+}

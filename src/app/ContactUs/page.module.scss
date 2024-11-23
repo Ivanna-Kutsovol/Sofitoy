@@ -1,0 +1,248 @@
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.contactUs{
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  height: 100%;
+  top: 50%;
+  left: 2%;
+  font-size: 240px;
+  color: rgba(130, 116, 116, 0.49);
+  -webkit-text-fill-color: rgba(130, 116, 116, 0.49);
+  font-weight: 700;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+  transform: translateY(-50%) rotate(-90deg);
+  z-index: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.form{
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between; 
+  padding: 55px 0 0 4%;
+  column-gap: 160px;
+  z-index: 2;
+  &__IT{
+    display: grid;
+    row-gap: 10px;
+    flex: 1;
+    margin-bottom: 115px;
+  }
+  &__topic{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    font-size: 40px;
+    font-weight: normal;
+  }
+  &__input {
+    position: relative;
+    box-sizing: border-box;
+    background-color: transparent;
+    width: 27.78vw;
+    height: 100%;
+    font-size: 35px;
+    border: none;
+    border-bottom: 2px solid #000000;
+    color: #000000;
+    cursor: pointer;
+    text-align: center;
+
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    border-radius: 0;
+
+    &:focus {
+      border-bottom: 2px solid #000000;
+      -webkit-transform: translateY(-10%);
+      transform: translateY(-10%);
+  }
+}
+
+  &__errors{
+    font-size: 25px;
+    position: absolute;
+    padding-top: 8%;
+    color: red;
+  }
+}
+.dropWindow{
+  display: flex;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  width: 930px;
+  height: 195px;
+  background-color: #FEFEFE;
+  border-radius: 25px;
+  box-shadow: -13px 8px 8px #00000031;
+  animation: slideUp 0.5s ease forwards;
+  z-index: 100000;
+   top: 0;
+   -webkit-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+  &__text{
+    position: absolute;
+    padding: 54px 43px 54px 84px;
+    color: #818181;
+    font-size: 40px;
+    font-weight: 500;
+  }
+  &__buttonOK{
+    position: absolute;
+    color: #454545;
+    background-color: #D9D9D9;
+    font-size: 40px;
+    height: 70px;
+    width: 220px;
+    border-radius: 95px;
+    border-color: transparent;
+    align-self: end;
+    top: 100px;
+    right: 142px;
+    font-weight: 600;
+  }
+}
+
+.button{
+  width: 100%;
+  height: 400px;
+  padding: 0;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0); 
+    transform: translateY(0); 
+  }
+}
+
+
+
+@media (max-width: 1024px){
+  .main{
+    height: auto;
+  }
+  .contactUs{
+    font-size: 184px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+    margin: 10px 0 0 0;
+  }
+  .form{
+    padding: 27% 0 0 0;
+    column-gap: 9%;
+    justify-content: center;
+    &__IT{
+      row-gap: 2%;
+      margin-bottom: 100px;
+    }
+    &__topic{
+      font-size: 24px;
+    }
+    &__input{
+      width: 280px;
+      height: 50px;
+      font-size: 25px;
+    }
+    &__errors{
+      font-size: 14px;
+      padding-top: 9%;
+    }
+  }
+  .dropWindow{
+    width: 500px;
+    height: 120px;
+    border-radius: 20px;
+    &__text{
+      padding: 30px 30px 37px 50px ;
+      font-size: 23px;
+    }
+    &__buttonOK{
+      font-size: 24px;
+      height: 40px;
+      width: 100px;
+      border-radius: 50px;
+      top: 60px;
+      right: 36px;
+    }
+  }
+}
+
+@media (max-width: 900px){
+  .form{
+    &__errors{
+      font-size: 14px;
+      padding-top: 11%;
+    }
+  }
+}
+
+@media (max-width: 680px){
+  .contactUs{
+    font-size: 160px;
+  }
+}
+
+@media(max-width: 600px){
+  .contactUs{
+    margin: 15px 0 0 0;
+    font-size: 100px;
+  }
+  .form{
+    padding: 15% 0 0 0;
+    column-gap: 11%; 
+    margin: 25% 0; 
+    &__IT{
+      row-gap: 3%;
+      margin-bottom: 45px;
+    }
+    &__topic{
+      font-size: 14px;
+    }
+    &__input{
+      width: 150px;
+      font-size: 15px;
+      height: 20px;
+      border-bottom: 1px solid #000000;
+    &:focus{
+      border-bottom: 1px solid #000000;
+    }
+  }
+  &__errors{
+    font-size: 9px;
+    padding-top: 10%;
+  }
+  }
+  .dropWindow{
+    width: 300px;
+    height: 70px;
+    border-radius: 15px;
+    box-shadow: -13px 5px 8px #00000031;
+    &__text{
+      padding: 17px 14px 17px 14px;
+      font-size: 15px;
+    }
+    &__buttonOK{
+      font-size: 15px;
+      height: 30px;
+      width: 705px;
+      top: 40px;
+      right: 11px;
+    }
+  }
+}

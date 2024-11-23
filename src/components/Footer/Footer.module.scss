@@ -1,0 +1,155 @@
+.footer {
+    transition: all 0.7s ease;
+    color: var(--main-text-color);
+    padding: 77px 5% 34px;
+    background-color: var(--pink-color);
+    
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40%;
+
+    }
+    &__section{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    &__copy {
+        margin-top: 95px;
+        text-align: center;
+        font-weight: 200;
+        letter-spacing: 3px;
+    }
+}
+
+.social{
+    margin-top: 5px;
+    & ul {
+        list-style: none;
+        display: flex;
+        & li {
+            transition: all 0.7s ease;
+            margin-right: 18px;
+        }
+    }
+    &__heading{
+        transition: all 0.7s ease;
+        text-transform: uppercase;
+        font-size: 32px;
+        font-weight: 300;
+    }
+    &__img{
+        transition: all 0.7s ease;
+        width: 70px;
+        height: 64px;
+    }
+}
+
+.contact {
+    font-size: 40px;
+    margin-top: 18px;
+    font-weight: 300;
+    &__heading {
+        display: flex;
+        align-items: center; 
+    }
+    &__image{
+        transition: all 0.7s ease;
+        width: 85px;
+        height: 72px;
+    }
+    &__title{
+        font-size: 36px;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+    & ul {
+        list-style: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer {
+        padding: 26px 2.8% 9px;
+        &__copy {
+            margin-top: 35px;
+            font-size: 13px;
+        }
+    }
+    .social{
+        & ul {
+            & li {
+                margin-right: 18px;
+            }
+        }
+        &__heading{
+            font-size: 15px;
+        }
+        &__img{
+            width: 19px;
+            height: 19px;
+        }
+    }
+    .contact {
+        margin-top: 4px;
+        &__image{
+            width: 19px;
+            height: 21px;
+        }
+        &__title{
+            font-size: 15px;
+        }
+        & ul {
+            & li {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .footer {
+        padding: 10px 5% 4px;
+        &__copy {
+            margin-top: 24px;
+            font-size: 9px;
+        }
+        &__section{
+            justify-content: start;
+        }
+    }
+    .social{
+        & ul {
+            & li {
+                margin-right: 9px;
+            }
+        }
+        &__heading{
+            font-size: 8px;
+        }
+        &__img{
+            width: 13px;
+            height: 13px;
+        }
+    }
+    .contact {
+        margin-top: 2px;
+        &__heading {
+            margin-top: 13px;            
+        }
+        &__image{
+            width: 12px;
+            height: 14px;
+        }
+        &__title{
+            font-size: 9px;
+        }
+        & ul {
+            & li {
+                font-size: 10px;
+                padding: 1px 0;
+            }
+        }
+    }
+}

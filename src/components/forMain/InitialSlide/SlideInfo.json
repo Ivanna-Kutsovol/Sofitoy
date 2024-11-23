@@ -1,0 +1,13 @@
+[
+  {
+    "ImgSlideSmall" : "sliderBoySmall.webp",
+    "ImgSlide" : "sliderGirl.webp",
+    "id" : 1
+    
+  },
+  {
+    "ImgSlideSmall" : "sliderGirlSmall.webp",
+    "ImgSlide" : "sliderBoy.webp",
+    "id" : 2
+  }
+]

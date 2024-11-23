@@ -1,0 +1,35 @@
+.scrollToTop{
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    right: 20px;
+    bottom: 200px;
+    z-index: 2;
+    width: 80px;
+    height: 80px;
+    &:hover{
+        opacity: 0.7;
+        cursor: pointer;
+    }
+    &:active{
+        scale: 1.2;
+    }
+    &__Img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .scrollToTop{
+        width: 74px;
+        height: 74px;
+    }
+}
+
+@media (max-width: 500px) {
+    .scrollToTop{
+        width: 50px;
+        height: 50px;
+    }
+}

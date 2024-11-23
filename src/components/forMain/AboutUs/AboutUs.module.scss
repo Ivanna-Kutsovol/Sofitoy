@@ -1,0 +1,233 @@
+.aboutUs {
+    padding: 0px 100px 00px;
+    will-change: max-height, opacity;
+    &__heading {
+        color: #b5a0ef;
+        text-transform: uppercase;
+        font-size: 96px;
+        font-weight: bold;
+        letter-spacing: 1rem;
+        text-align: center;
+    }
+    &__box {
+        display: flex;
+        align-items: center;
+        font-size: 38px;
+        font-weight: 400;
+        line-height: 140%;
+        margin-top: 15px;
+        &:last-child {
+            flex-wrap: wrap;
+        }
+    }
+    &__textBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+    }
+    &__Img {
+        height: 650px;
+        min-width: auto;
+    }
+    &__accordion {
+        width: 100%;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    &__accordionHead {
+        color: var(--main-text-color);
+        background-color: var(--second-bg-color);
+        font-size: 38px;
+        font-weight: bold;
+        text-transform: capitalize;
+        padding: 20px 50px;
+        border-radius: var(--border-radius);
+        position: relative;
+        z-index: 100;
+        box-shadow: 0 8px 30px -18px #000;
+    }
+    &__accordionArrow {
+        position: absolute;
+        top: 25px;
+        right: 36px;
+        &:hover{
+            cursor: pointer;
+            opacity: 0.7;
+        }
+        &:active {
+            scale: 1.3;
+        }
+    }
+    &__accordionArrowImg {
+        width: 70px;
+        height: 35px;
+    }
+    &__accordionText {
+        position: relative;
+        top: -10px;
+        font-size: 38px;
+        background-color: var(--second-bg-color);
+        padding: 40px 60px 40px;
+        text-align: justify;
+        overflow: hidden;
+        z-index: 40;
+    }
+}
+
+@media (max-width: 1250px) {
+    .aboutUs {
+        &__box {
+            font-size: 27px;
+            
+        }
+        &__Img {
+            min-width: 400px;
+        }
+        &__accordionArrow {
+            top: 50px;
+        }
+    }
+}
+
+@media(max-width: 950px) {
+    .aboutUs {
+        padding: 0px 100px 80px;
+        &__heading{
+            letter-spacing: 15px;
+        }
+        &__box {
+            font-size: 24px;
+        }
+        &__Img {
+            min-height: 360px;
+        }
+        &__accordion {
+            margin-bottom: 20px;
+        }
+        &__accordionHead {
+            font-size: 24px;
+            padding: 20px 36px 20px;
+            border-radius: 9px;
+        }
+        &__accordionArrow {
+            top: 20px;
+        }
+        &__accordionArrowImg {
+            width: 35px;
+            height: 20px;
+        }
+        &__accordionText {
+            font-size: 24px;
+            padding: 38px 24px 33px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .aboutUs {
+        padding: 0px 41px 0 41px;
+        &__heading {
+            font-size: 48px;
+            letter-spacing: 15px;
+        }
+        &__box {
+            font-size: 23px;
+            line-height: 150%;
+        }
+        &__Img {
+            min-height: 330px;
+        }
+        &__accordion {
+            margin-bottom: 20px;
+        }
+        &__accordionHead {
+            font-size: 24px;
+            padding: 20px 36px 20px;
+            border-radius: 9px;
+        }
+        &__accordionArrow {
+            top: 20px;
+        }
+        &__accordionArrowImg {
+            width: 35px;
+            height: 20px;
+        }
+        &__accordionText {
+            font-size: 24px;
+            padding: 28px 24px 33px;
+        }
+    }
+}
+
+@media (min-width: 451px) and (max-width: 600px) {
+    .aboutUs {
+        width: 100%;
+        padding: 0;
+        &__heading {
+            font-size: 48px;
+            letter-spacing: 9px;
+        }
+        &__box {
+            font-size: 16px;
+            line-height: 170%;
+        }
+        &__Img {
+            min-height: 240px;
+        }
+        &__accordionHead {
+            font-size: 16px;
+            padding-left: 20px;
+            border-radius: 9px;
+        }
+        &__accordionText {
+            padding: 24px 24px 20px;
+            font-size: 13px;
+        }
+    }
+}
+@media (min-width: 200px) and (max-width: 450px) {
+    .aboutUs {
+        width: 100%;
+        padding: 0;
+        &__heading {
+            box-sizing: border-box;
+            font-size: 32px;
+            margin-top: 10px;
+            letter-spacing: 9px;
+        }
+        &__box {
+            font-size: 13px;
+            line-height: 110%;
+            margin-top: 8px;
+        }
+        &__heading {
+            font-size: 32px;
+        }
+        &__Img {
+            min-width: 180px;
+            min-height: auto;
+            height: 250px;
+        }
+        &__accordion {
+            margin-bottom: 18px;
+        }
+        &__accordionHead {
+            font-size: 12px;
+            padding: 13px 25px 13px 16px;
+        }
+        &__accordionArrowImg {
+            width: 21px;
+            height: 12px;
+        }
+        &__accordionArrow {
+            top: 15px;
+            right: 14px;
+        }
+        &__accordionText {
+            padding: 16px 16px 8px;
+            font-size: 13px;
+        }
+    }
+}
