@@ -3,10 +3,10 @@
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import styles from "./Sliderpage.module.scss";
-import ArrowLeftActive from "/public/ImgSliders/arrowLeftActive.svg";
-import ArrowLeft from "/public/ImgSliders/arrowLeft.svg";
-import ArrowRightActive from "/public/ImgSliders/arrowRightActive.svg";
-import ArrowRight from "/public/ImgSliders/arrowRight.svg";
+import ArrowLeftActive from "./../../../../../public/imgSliders/arrowLeftActive.svg";
+import ArrowLeft from "./../../../../../public/imgSliders/arrowLeft.svg";
+import ArrowRightActive from "./../../../../../public/imgSliders/arrowRightActive.svg";
+import ArrowRight from "./../../../../../public/imgSliders/arrowRight.svg";
 
 const InitialSliders = (data: any) => {
   const dataArr = data.data[0];
