@@ -206,7 +206,6 @@
 }
 
 @media (max-width: 800px) {
-  
   .catalogySlides{
     &__img{
       height: 350px;
@@ -267,12 +266,20 @@
       &:after {
         content: url("../../../../../../public/imgCatalogy/leftArrowSliderTablet.png")
       }
+      &:active {
+        box-shadow: none;
+        transform: none;  
+      }
     }
     &__nextButton{
       top: -400px;
       right: -70px;
       &:after {
       content: url("../../../../../../public/imgCatalogy/rightArrowSliderTablet.png")
+      }
+      &:active {
+        box-shadow: none;
+        transform: none;  
       }
     }
     .ammount{ 
