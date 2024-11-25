@@ -67,13 +67,13 @@ const InitialSliders = (data: any) => {
       <section className={styles.slides__container}>
         <a className={`${styles.slides__backgroundSlideSmall}`} 
          style={{
-          backgroundImage: `url('/ImgSliders/${dataArr[nextIndex].ImgSlideSmall}')`,
+          backgroundImage: `url('/imgSliders/${dataArr[nextIndex].ImgSlideSmall}')`,
           backgroundRepeat: 'no-repeat'
         }}
          >
           <Image
             unoptimized 
-            src={`/ImgSliders/${dataArr[currentIndex].ImgSlideSmall}`}
+            src={`/imgSliders/${dataArr[currentIndex].ImgSlideSmall}`}
             alt="slider"
             width={200}
             height={600}
@@ -120,14 +120,14 @@ const InitialSliders = (data: any) => {
 
         <a className={`${styles.slides__backgroundImgSlide} `}
         style={{
-          backgroundImage: `url('/ImgSliders/${dataArr[nextIndex].ImgSlide}')`,
+          backgroundImage: `url('/imgSliders/${dataArr[nextIndex].ImgSlide}')`,
           backgroundRepeat: 'no-repeat'
           
           }}
         >
           <Image
             unoptimized 
-            src={`/ImgSliders/${dataArr[currentIndex].ImgSlide}`}
+            src={`/imgSliders/${dataArr[currentIndex].ImgSlide}`}
             alt="slider"
             width={470}
             height={600}
