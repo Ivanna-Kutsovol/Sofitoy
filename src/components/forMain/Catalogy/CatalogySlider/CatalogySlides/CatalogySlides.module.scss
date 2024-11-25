@@ -132,14 +132,14 @@
     }
   }
   &__prevButton {
-    top: -550px;
+    top: -450px;
     left: -80px;
     &:after {
       content: url("../../../../../../public/imgCatalogy/leftArrowSlider.png");
     }
   }
   &__nextButton {
-    top: -550px;
+    top: -450px;
     right: -80px;
     &::after {
       content: url("../../../../../../public/imgCatalogy/rightArrowSlider.png");
@@ -189,14 +189,14 @@
         margin: 10px auto 0px;
     }
     &__prevButton{
-      top: -550px;
+      top: -450px;
       left: -70px;
       &:after {
         content: url("../../../../../../public/imgCatalogy/leftArrowSliderTablet.png")
       }
     }
     &__nextButton{
-      top: -550px;
+      top: -450px;
       right: -70px;
       &:after {
       content: url("../../../../../../public/imgCatalogy/rightArrowSliderTablet.png")
