@@ -193,31 +193,31 @@
             font-weight: 400;
             font-size: 2.3vw;
             &__first {
-                top: 22%;
-                left: 30%;
+                top: 20%;
+                left: 40%;
             }
             &__second {
                 top: -2%;
-                left: 74%;
+                left: 62%;
             }
             &__third {
                 top: 73%;
-                right: 48%;
+                right: 38%;
             }
             &__fours {
-                bottom: 33%;
-                right: 3%;
+                bottom: 32%;
+                right: 10%;
             }
         }
         &__icon{
-            width: 14vw;
-            height: 14vw;
+            width: 12vw;
+            height: 12vw;
             &__first {
-                top: -6%;
+                top: -10%;
                 left: 30%;
             }
             &__second {
-                top: 16%;
+                top: 10%;
                 left: 84%;
             }
             &__third {
@@ -226,7 +226,7 @@
             }
             &__fours {
                 bottom: 0%;
-                right: 2%;
+                right: 3%;
             }
         }
     }
