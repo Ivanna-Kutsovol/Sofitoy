@@ -63,19 +63,19 @@ const Header = () => {
                 <nav className={styles.mainNav}>
                     <ul className={styles.mainNav__list}>
                         <li className={styles.mainNav__item}>
-                            <Link href="#about-us" scroll={true} className={styles.mainNav__link}>About us</Link>
+                            <Link href="/#about-us" scroll={true} className={styles.mainNav__link}>About us</Link>
                         </li>
                         <li className={styles.mainNav__item}>
-                            <Link href="#home-catalogy" scroll={true} className={styles.mainNav__link}>Catalogy</Link>
+                            <Link href="/#home-catalogy" scroll={true} className={styles.mainNav__link}>Catalogy</Link>
                         </li>
                         <li className={styles.mainNav__item}>
-                            <Link href="#feedback" scroll={true} className={styles.mainNav__link}>Feedback</Link>
+                            <Link href="/#feedback" scroll={true} className={styles.mainNav__link}>Feedback</Link>
                         </li>
                         <li className={styles.mainNav__item}>
-                            <Link href="#specials-conditions" scroll={true} className={styles.mainNav__link}>For Partrens</Link>
+                            <Link href="/#specials-conditions" scroll={true} className={styles.mainNav__link}>For Partrens</Link>
                         </li>
                         <li className={styles.mainNav__item}>
-                            <Link href="#order-call" scroll={true} className={styles.mainNav__link}>Contacts</Link>
+                            <Link href="/#order-call" scroll={true} className={styles.mainNav__link}>Contacts</Link>
                         </li>
                     </ul>
                 </nav>
